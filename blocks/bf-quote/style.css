@@ -1,0 +1,54 @@
+.bf-quote-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.bf-quote-container:before,
+.bf-quote-container:after {
+  content: '';
+  display: block;
+  width: 40%;
+  background-color: var(--wp--preset--color--primary);
+  height: 5px;
+}
+
+.bf-quote-container figure {
+
+}
+
+.bf-quote-container figure p {
+  margin: 0;
+  font-size: var(--wp--preset--font-size--gargantuan);  
+  font-family: var(--wp--preset--font-family--parkson);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding: 0 50px;
+}
+.bf-quote-container figure p:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 30px;
+  background-image: url("./assets/quotes-top.png");
+  left: 0;
+  position: absolute;
+}
+.bf-quote-container figure p:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 30px;
+  background-image: url("./assets/quotes-bottom.png");
+  right: 0;
+  position: absolute;
+}
+
+.bf-quote-container figcaption {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 48px;
+  font-family: var(--wp--preset--font-family--futura);
+}

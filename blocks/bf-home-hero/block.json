@@ -1,0 +1,28 @@
+{
+  "name": "le/bf-home-hero",
+  "title": "BF Home Hero",
+  "description": "",
+  "style": "block-bf-home-hero",
+  "category": "theme",
+  "icon": "",
+  "apiVersion": 2,
+  "keywords": [],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "styles": [
+  ],
+  "supports": {
+      "align": false,
+      "anchor": false,
+      "alignContent": false,
+      "color": {
+          "text": false,
+          "background": false,
+          "link": false
+      },
+      "alignText": true,
+      "fullHeight": false
+  }
+}

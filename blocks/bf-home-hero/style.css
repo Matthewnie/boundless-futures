@@ -1,0 +1,33 @@
+.bf-home-parallax-container {
+  max-width: var(--wp--custom--layout--wide) !important;
+}
+
+.bf-home-background {
+  position: sticky;
+  top: 30px;
+  left: 0;
+  right: 0;
+
+  background-image: url("./assets/home-hero-no-limits-text.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  
+  aspect-ratio: 1246/403;
+  max-width: 1246px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.bf-home-hero {
+  position: relative; 
+  z-index: 2;
+  border-bottom: 5px solid var(--wp--preset--color--primary);
+
+  margin-top: -120px;
+  margin-top: clamp(-190px, calc((100vw * 0.15) * -1), -80px);
+}
+
+.bf-home-hero img {
+  margin: 0 auto;
+}
