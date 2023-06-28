@@ -7,7 +7,7 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'testimonial-block';
+$class_name = 'bf-quote-container';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
@@ -19,7 +19,7 @@ $text = get_field('quote') ?: 'The only limit to our realization of tomorrow wil
 $source = get_field('source') ?: false;
 ?>
 
-<div class="bf-quote-container">
+<div <?php echo $anchor; ?> class="<?php echo $class_name; ?>">
   <figure>
     <blockquote>
       <p><?php echo $text; ?></p>

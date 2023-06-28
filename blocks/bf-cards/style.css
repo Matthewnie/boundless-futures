@@ -1,0 +1,38 @@
+.bf-cards-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  justify-content: space-between;
+}
+
+.bf-cards-container .bf-card {
+  border: 1px solid #EEEEEE;
+  box-shadow: 2px 4px 6px rgba(0,0,0,.16);
+
+  background-image: url("./assets/logo-accent.png");
+  background-repeat: no-repeat;
+  background-position: left 32px bottom 32px;
+  padding-bottom: 71px;
+  background-color: var(--wp--preset--color--backdrop);
+
+  max-width: 280px;
+}
+
+.bf-card .header {
+  background-color: #ffffff;
+  padding: 13px 13px 13px 32px;
+  background-image: url("./assets/triangle-accent.png");
+  background-repeat: no-repeat;
+  background-position: right 13px top 13px;
+  height: 162px;
+  display: flex;
+  align-items: center;
+}
+.bf-card h2 {
+  font-size: var(--wp--preset--font-size--colossal);
+}
+.bf-card .body {
+  color: #ffffff;
+  padding: 32px 32px;
+  font-size: 25px;
+}

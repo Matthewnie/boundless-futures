@@ -1,1 +1,90 @@
-.full-width-content .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper>*,.block-area-before-footer .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper>*,.full-width-content .editor-styles-wrapper .block-editor-block-list__layout.is-root-container>*,.block-area-before-footer .editor-styles-wrapper .block-editor-block-list__layout.is-root-container>*{max-width:var(--wp--custom--layout--wide)}.block-area-sidebar .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper>*,.block-area-sidebar .editor-styles-wrapper .block-editor-block-list__layout.is-root-container>*{max-width:var(--wp--custom--layout--sidebar)}.block-area-after-post .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper>*,.block-area-before-recipe .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper>*,.block-area-after-post .editor-styles-wrapper .block-editor-block-list__layout.is-root-container>*,.block-area-before-recipe .editor-styles-wrapper .block-editor-block-list__layout.is-root-container>*{max-width:var(--wp--custom--layout--content)}.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper>*.alignfull,.editor-styles-wrapper .block-editor-block-list__layout.is-root-container>*.alignfull{margin-left:calc(-1*var(--wp--custom--layout--padding)) !important;margin-right:calc(-1*var(--wp--custom--layout--padding)) !important}.editor-styles-wrapper{padding-left:var(--wp--custom--layout--padding);padding-right:var(--wp--custom--layout--padding)}body.full-width-content .editor-styles-wrapper{--wp--custom--layout--page: var(--wp--custom--layout--wide)}
+/**
+ * Button Reset
+ *
+ */
+/**
+ * Size
+ *
+ */
+/**
+ * Block Cover
+ * Creates a block that covers the full width/height of parent div. Typically used on a :before pseudo element
+ */
+/**
+ * Placeholder Color
+ *
+ */
+/**
+ * Clearfix
+ *
+ */
+/**
+ * Font Sizes
+ *
+**/
+p > a {
+  color: var(--wp--preset--color--primary);
+}
+
+.entry-header.leader {
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80vh;
+  max-height: 500px;
+  border-bottom: 5px solid var(--wp--preset--color--primary);
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--wp--custom--layout--block-gap-large);
+}
+.entry-header.leader h1 {
+  font-size: 125px;
+}
+.entry-header.leader p {
+  margin: 0;
+  color: var(--wp--preset--color--primary);
+  font-size: 36px;
+}
+
+.more-leaders-container {
+  max-width: var(--wp--custom--layout--page);
+  margin: var(--wp--custom--layout--block-gap-large) auto;
+}
+.more-leaders-container .leaders {
+  display: flex;
+  gap: var(--wp--custom--layout--block-gap);
+}
+.more-leaders-container .leader {
+  width: 25%;
+}
+
+.full-width-content .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > *, .block-area-before-footer .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > *,
+.full-width-content .editor-styles-wrapper .block-editor-block-list__layout.is-root-container > *,
+.block-area-before-footer .editor-styles-wrapper .block-editor-block-list__layout.is-root-container > * {
+  max-width: var(--wp--custom--layout--wide);
+}
+.block-area-sidebar .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > *,
+.block-area-sidebar .editor-styles-wrapper .block-editor-block-list__layout.is-root-container > * {
+  max-width: var(--wp--custom--layout--sidebar);
+}
+.block-area-after-post .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > *, .block-area-before-recipe .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > *,
+.block-area-after-post .editor-styles-wrapper .block-editor-block-list__layout.is-root-container > *,
+.block-area-before-recipe .editor-styles-wrapper .block-editor-block-list__layout.is-root-container > * {
+  max-width: var(--wp--custom--layout--content);
+}
+.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > *.alignfull,
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > *.alignfull {
+  margin-left: calc(-1 * var(--wp--custom--layout--padding)) !important;
+  margin-right: calc(-1 * var(--wp--custom--layout--padding)) !important;
+}
+
+.editor-styles-wrapper {
+  padding-left: var(--wp--custom--layout--padding);
+  padding-right: var(--wp--custom--layout--padding);
+}
+
+body.full-width-content .editor-styles-wrapper {
+  --wp--custom--layout--page: var(--wp--custom--layout--wide);
+}
+
+/*# sourceMappingURL=editor-layout.css.map */

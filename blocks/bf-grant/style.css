@@ -1,0 +1,22 @@
+.bf-grant-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bf-grant-container .column {
+  width: 45%;
+}
+
+.bf-grant-container h2 {
+  font-family: var(--wp--preset--font-family--futura);
+  font-style: italic;
+}
+
+.bf-grant-container h5 {
+  font-family: var(--wp--preset--font-family--futura);
+  font-weight: 400; 
+}
+
+.bf-grant-container .requirements {
+  font-size: var(--wp--preset--font-size--small);
+}

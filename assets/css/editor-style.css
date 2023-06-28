@@ -22,6 +22,42 @@
  * Font Sizes
  *
 **/
+p > a {
+  color: var(--wp--preset--color--primary);
+}
+
+.entry-header.leader {
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80vh;
+  max-height: 500px;
+  border-bottom: 5px solid var(--wp--preset--color--primary);
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--wp--custom--layout--block-gap-large);
+}
+.entry-header.leader h1 {
+  font-size: 125px;
+}
+.entry-header.leader p {
+  margin: 0;
+  color: var(--wp--preset--color--primary);
+  font-size: 36px;
+}
+
+.more-leaders-container {
+  max-width: var(--wp--custom--layout--page);
+  margin: var(--wp--custom--layout--block-gap-large) auto;
+}
+.more-leaders-container .leaders {
+  display: flex;
+  gap: var(--wp--custom--layout--block-gap);
+}
+.more-leaders-container .leader {
+  width: 25%;
+}
+
 /* Heading
 --------------------------------------------- */
 h1,

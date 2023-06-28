@@ -12,7 +12,7 @@ echo '<article class="' . esc_attr( join( ' ', get_post_class() ) ) . '">';
 
 if ( be_has_action( 'tha_entry_top' ) ) {
 	echo '<header class="entry-header">';
-	// tha_entry_top();
+	tha_entry_top();
 	echo '</header>';
 }
 

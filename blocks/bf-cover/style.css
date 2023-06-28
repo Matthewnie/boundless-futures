@@ -1,0 +1,10 @@
+.bf-cover {
+  max-height: 75vh;
+  overflow: hidden;
+}
+.bf-cover img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  max-width: unset !important;
+}
