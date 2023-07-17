@@ -20,4 +20,7 @@ if( !empty($block['align']) ) {
 
 <div <?php echo $anchor; ?> class="<?php echo $class_name; ?>">
   <img src="<?php echo get_theme_file_uri( '/assets/images/contact-hero.png' ); ?>" alt="Contact Hero">
+  <div class="inner-container">
+    <h1>Contact the Foundation</h1>
+  </div>
 </div>

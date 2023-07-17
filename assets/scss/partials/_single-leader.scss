@@ -1,22 +1,27 @@
 .entry-header.leader {
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 80vh;
-  max-height: 500px;
+  max-width: var(--wp--custom--layout--wide);
+  .entry-header-content {
+    margin: 0 auto;
+    max-width: var(--wp--custom--layout--page);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    
+    h1 {
+      font-size: 125px;
+    }
+    p {
+      margin: 0;
+      color: var(--wp--preset--color--primary);
+      font-size: 36px;
+    }
+  }
+  
   border-bottom: 5px solid var(--wp--preset--color--primary);
-  display: flex;
-  align-items: center;
-
-  h1 {
-    font-size: 125px;
-  }
-  p {
-    margin: 0;
-    color: var(--wp--preset--color--primary);
-    font-size: 36px;
-  }
-
   margin-bottom: var(--wp--custom--layout--block-gap-large);
 }
 
@@ -26,9 +31,10 @@
 
   .leaders {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--wp--custom--layout--block-gap);
-  }
-  .leader {
-    width: 25%;
+    & > div {
+      width: 30%;
+    }
   }
 }

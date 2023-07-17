@@ -118,6 +118,9 @@ figure.wp-caption {
 	&.has-background {
 		padding: 0;
 	}
+	&.alignwide {
+		max-width: var(--wp--custom--layout--wide);
+	}
 }
 
 /* Button
@@ -257,12 +260,17 @@ label,
 
 	&.alignfull {
 		padding: var(--wp--custom--layout--block-gap-large) var(--wp--custom--layout--padding);
+		z-index: 1;
+		position: relative;
 	}
 }
 
-.alignwide:not(.is-layout-constrained) > *,
-.alignfull:not(.is-layout-constrained) > * {
+.alignwide:not(.is-layout-constrained) > * {
 	max-width: var(--wp--custom--layout--wide);
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignfull:not(.is-layout-constrained) > * {
 	margin-left: auto;
 	margin-right: auto;
 }

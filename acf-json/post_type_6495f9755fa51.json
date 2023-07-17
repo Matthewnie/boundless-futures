@@ -66,7 +66,9 @@
         "editor",
         "thumbnail"
     ],
-    "taxonomies": "",
+    "taxonomies": [
+        "leadership-type"
+    ],
     "has_archive": false,
     "has_archive_slug": "",
     "rewrite": {
@@ -80,5 +82,5 @@
     "can_export": true,
     "delete_with_user": false,
     "register_meta_box_cb": "",
-    "modified": 1687550349
+    "modified": 1689620578
 }

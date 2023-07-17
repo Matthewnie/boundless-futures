@@ -176,10 +176,10 @@ function be_template_hierarchy( $template ) {
 add_filter( 'template_include', 'be_template_hierarchy' );
 
 
-// remove_action('tha_entry_top', 'be_entry_header');
-// function leader_top(){
-// 	if(!is_singular('leader')) return;
+remove_action('tha_entry_top', 'be_entry_header');
+function leader_top(){
+	if(!is_singular('leader')) return;
 
-// 	echo 'Testing';
-// }
-// add_action('tha_entry_top', 'leader_top', 5);
+	echo 'Testing';
+}
+add_action('tha_entry_top', 'leader_top', 5);

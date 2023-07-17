@@ -10,16 +10,23 @@
 }
 
 .site-footer {
-	margin: 0 auto;
-	max-width: var(--wp--custom--layout--content);
+	padding-top: var(--wp--custom--layout--block-gap-large);
+	background-color: #ffffff;
+	z-index: 1;
+	position: relative;
+}
+
+.site-footer .wrap {
 	border-top: 5px solid var(--wp--preset--color--primary);
+	margin: 0 auto;
+	max-width: var(--wp--custom--layout--wide);
 	font-size: var(--wp--preset--font-size--small);
 	padding: 40px 0;
 	position: relative;
 	text-align: center;
 }
-
-.site-footer .wrap {
+.site-footer .content {
+	max-width: var(--wp--custom--layout--content);
 	display: flex;
 	justify-content: space-between;
 	padding: 0 var(--wp--custom--layout--block-gap-x-large);

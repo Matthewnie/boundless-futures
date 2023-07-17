@@ -1,0 +1,42 @@
+.bf-video-cover-parallax-container {
+  /* width: 100%;
+  margin: 0 auto !important; */
+  overflow: hidden;
+  height: calc(100vh - 67px);
+  position: relative;
+  z-index: 0;
+}
+
+.bf-video-cover-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.bf-video-cover-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  filter: grayscale(100%);
+}
+
+.bf-video-cover {
+  position: relative; 
+  z-index: 2;
+  border-bottom: 5px solid var(--wp--preset--color--primary);
+
+  margin-top: -120px;
+  margin-top: clamp(-190px, calc((100vw * 0.15) * -1), -80px);
+}
+
+.bf-video-cover img {
+  margin: 0 auto;
+}
+
+.editor-styles-wrapper .bf-video-cover-background {
+  position: relative;
+  z-index: 0;
+}

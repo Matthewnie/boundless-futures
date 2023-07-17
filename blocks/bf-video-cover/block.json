@@ -1,0 +1,28 @@
+{
+  "name": "le/bf-video-cover",
+  "title": "Page Video Cover",
+  "description": "",
+  "style": "block-bf-video-cover",
+  "category": "theme",
+  "icon": "",
+  "apiVersion": 2,
+  "keywords": [],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "styles": [
+  ],
+  "supports": {
+      "align": ["full"],
+      "anchor": false,
+      "alignContent": false,
+      "color": {
+          "text": false,
+          "background": false,
+          "link": false
+      },
+      "alignText": false,
+      "fullHeight": false
+  }
+}

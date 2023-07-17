@@ -15,10 +15,10 @@ echo '</div>'; // .site-inner
 Block_Areas\show( 'before-footer' );
 
 tha_footer_before();
-echo '<footer class="site-footer" role="contentinfo"><div class="wrap">';
+echo '<footer class="site-footer" role="contentinfo"><div class="wrap"><div class="content">';
 tha_footer_top();
 tha_footer_bottom();
-echo '</div></footer>';
+echo '</div></div></footer>';
 tha_footer_after();
 
 echo '</div>';

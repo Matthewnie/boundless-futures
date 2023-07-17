@@ -5,6 +5,7 @@
 	background: var(--wp--preset--color--background);
 	position: relative;
 	padding-top: var(--wp--custom--layout--padding);
+	z-index: 1;
 
 	.wrap {
 		display: grid;

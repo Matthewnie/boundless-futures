@@ -111,7 +111,7 @@
 		"spacing": {
 			"blockGap": false,
 			"margin": false,
-			"padding": false,
+			"padding": true,
 			"units": [
 				"%",
 				"px",
@@ -119,7 +119,14 @@
 				"rem",
 				"vh",
 				"vw"
-			]
+			],
+			"spacingScale": {
+				"operator": "*",
+				"increment": 1.5,
+				"steps": 7,
+				"mediumStep": 1.5,
+				"unit": "rem"
+			}
 		},
 		"typography": {
 			"dropCap": false,

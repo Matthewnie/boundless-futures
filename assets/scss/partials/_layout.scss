@@ -28,7 +28,8 @@ body {
 }
 
 .site-inner {
-	padding: var(--wp--custom--layout--block-gap-large) 0;
+	padding: var(--wp--custom--layout--block-gap-large) 0 0;
+	background-color:#ffffff;
 }
 
 body.full-width-content {
