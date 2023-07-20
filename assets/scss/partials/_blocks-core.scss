@@ -103,6 +103,16 @@ figure.wp-caption {
 	}
 }
 
+/* Video
+--------------------------------------------- */
+.wp-block-video {
+	&.grayscale {
+		video {
+			filter: grayscale(100%);
+		}
+	}
+}
+
 
 /* Separator
 --------------------------------------------- */

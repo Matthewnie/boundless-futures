@@ -1,8 +1,8 @@
 {
-  "name": "le/bf-home-hero",
-  "title": "BF Home Hero",
+  "name": "le/bf-sticky-cover",
+  "title": "Page Sticky Cover",
   "description": "",
-  "style": "block-bf-home-hero",
+  "style": "block-bf-sticky-cover",
   "category": "theme",
   "icon": "",
   "apiVersion": 2,
@@ -13,10 +13,16 @@
   },
   "styles": [
   ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    }
+  },
   "supports": {
-      "align": ["wide"],
+      "align": ["full"],
       "anchor": false,
-      "alignContent": false,
+      "alignContent": true,
       "color": {
           "text": false,
           "background": false,

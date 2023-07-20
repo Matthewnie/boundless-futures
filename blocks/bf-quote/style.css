@@ -13,19 +13,24 @@
   height: 5px;
 }
 
+.bf-quote-container.alignwide:before,
+.bf-quote-container.alignwide:after {
+  width: 50%;
+}
+
 .bf-quote-container figure {
 
 }
 
 .bf-quote-container figure p {
   margin: 0;
-  font-size: var(--wp--preset--font-size--gargantuan);  
+  font-size: var(--wp--preset--font-size--colossal);  
   font-family: var(--wp--preset--font-family--parkson);
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  padding: 0 50px;
+  padding-inline: clamp(2.125rem, 4vw, 3rem);
 }
 .bf-quote-container figure p:before {
   content: '';
@@ -51,4 +56,28 @@
   text-align: center;
   font-size: 48px;
   font-family: var(--wp--preset--font-family--futura);
+}
+
+/* Callout Style */
+.is-style-callout.bf-quote-container:before,
+.is-style-callout.bf-quote-container:after {
+  content: '';
+  display: block;
+  width: 35%;
+  background-color: var(--wp--preset--color--primary);
+  height: 5px;
+}
+
+.is-style-callout.bf-quote-container.alignwide:before,
+.is-style-callout.bf-quote-container.alignwide:after {
+  width: 45%;
+}
+
+.is-style-callout.bf-quote-container figure p {
+  padding-inline: clamp(3rem, 10vw, 6rem);
+}
+
+.is-style-callout.bf-quote-container figure p:before,
+.is-style-callout.bf-quote-container figure p:after {
+  display: none;
 }

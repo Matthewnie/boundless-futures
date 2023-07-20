@@ -18,6 +18,6 @@ if ( ! empty( $block['align'] ) ) {
 <div <?php echo $anchor;?> class="<?php echo $class_name; ?>">
   <div class="bf-home-background"></div>  
   <div class="bf-home-hero">
-    <img src="<?php echo get_theme_file_uri( '/blocks/bf-home-hero/assets/home-hero-photo.png' ); ?>" alt="Women">
+    <img src="<?php echo get_theme_file_uri( '/blocks/bf-home-hero/assets/home-hero-photo-2.png' ); ?>" alt="Women">
   </div>
 </div>

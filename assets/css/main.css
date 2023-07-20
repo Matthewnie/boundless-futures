@@ -538,6 +538,12 @@ figure.wp-caption {
   }
 }
 
+/* Video
+--------------------------------------------- */
+.wp-block-video.grayscale video {
+  filter: grayscale(100%);
+}
+
 /* Separator
 --------------------------------------------- */
 .wp-block-separator {
@@ -789,9 +795,11 @@ div.wpforms-container .wpforms-submit-container {
 /* Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
+  height: var(--wp--custom--layout--header);
   background: var(--wp--preset--color--background);
   position: relative;
   padding-top: var(--wp--custom--layout--padding);
+  padding-bottom: var(--wp--custom--layout--padding);
   z-index: 1;
 }
 .site-header .wrap {
@@ -1302,6 +1310,7 @@ h1.front {
   justify-content: space-between;
   padding: 0 var(--wp--custom--layout--block-gap-x-large);
   gap: var(--wp--custom--layout--block-gap-x-large);
+  margin: 0 auto;
 }
 
 .footer-info-block hr {

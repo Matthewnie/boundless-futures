@@ -75,4 +75,4 @@ function be_archive_header() {
 	echo '</div></div>';
 
 }
-add_action( 'tha_header_after', 'be_archive_header', 16 );
+// add_action( 'tha_header_after', 'be_archive_header', 16 );

@@ -2,9 +2,11 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
+	height: var(--wp--custom--layout--header);
 	background: var(--wp--preset--color--background);
 	position: relative;
 	padding-top: var(--wp--custom--layout--padding);
+	padding-bottom: var(--wp--custom--layout--padding);
 	z-index: 1;
 
 	.wrap {

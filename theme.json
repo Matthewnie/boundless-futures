@@ -93,7 +93,8 @@
 				"padding": "16px",
 				"block-gap": "16px",
 				"block-gap-large": "40px",
-				"block-gap-x-large": "100px"
+				"block-gap-x-large": "100px",
+				"header": "100px"
 			},
 			"letter-spacing": {
 				"none": "normal",
@@ -158,27 +159,27 @@
 			"fontSizes": [
 				{
 					"name": "Gargantuan",
-					"size": "clamp(2.75rem, 10vw, 6.25rem)",
+					"size": "clamp(3rem, 10vw, 6rem)",
 					"slug": "gargantuan"
 				},
 				{
 					"name": "Colossal",
-					"size": "clamp(2.5rem, 4.8vw, 3rem)",
+					"size": "clamp(2.75rem, 8vw, 5rem)",
 					"slug": "colossal"
 				},
 				{
 					"name": "Gigantic",
-					"size": "clamp(2.125rem, 4.4vw, 2.75rem)",
+					"size": "clamp(2.5rem, 6vw, 4rem)",
 					"slug": "gigantic"
 				},
 				{
 					"name": "Jumbo",
-					"size": "clamp(2rem, 4vw, 2.5rem)",
+					"size": "clamp(2.125rem, 4vw, 3rem)",
 					"slug": "jumbo"
 				},
 				{
 					"name": "Huge",
-					"size": "clamp(1.875rem, 3.6vw, 2.25rem)",
+					"size": "clamp(2rem, 3.6vw, 2.25rem)",
 					"slug": "huge"
 				},
 				{

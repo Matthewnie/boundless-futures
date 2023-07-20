@@ -14,7 +14,7 @@
   "styles": [
   ],
   "supports": {
-      "align": false,
+      "align": ["wide"],
       "anchor": false,
       "alignContent": false,
       "color": {
@@ -22,7 +22,7 @@
           "background": false,
           "link": false
       },
-      "alignText": true,
+      "alignText": false,
       "fullHeight": false
   }
 }

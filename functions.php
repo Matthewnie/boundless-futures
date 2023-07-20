@@ -183,3 +183,16 @@ function leader_top(){
 	echo 'Testing';
 }
 add_action('tha_entry_top', 'leader_top', 5);
+
+// function archive_top_wrapper(){
+// 	if(!is_singular()){
+// 		echo '<div class="articles-container">';
+// 	}
+// }
+// add_action('tha_content_while_before', 'archive_top_wrapper');
+// function archive_bottom_wrapper(){
+// 	if(!is_singular()){
+// 		echo '</div>';
+// 	}
+// }
+// add_action('tha_content_while_after', 'archive_bottom_wrapper');

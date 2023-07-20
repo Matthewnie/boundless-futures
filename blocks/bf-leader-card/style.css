@@ -1,29 +1,35 @@
 .bf-leader-card {
   max-width: 430px;
-  /* margin:; */
 }
 .bf-leader-card.aligncenter {
   margin-inline: auto;
 }
-/* .bf-grant-container {
-  display: flex;
-  justify-content: space-between;
-}
 
-.bf-grant-container .column {
-  width: 45%;
-}
-
-.bf-grant-container h2 {
+.bf-leader-card h4 {
+  margin-top: .5em;
   font-family: var(--wp--preset--font-family--futura);
-  font-style: italic;
 }
 
-.bf-grant-container h5 {
-  font-family: var(--wp--preset--font-family--futura);
-  font-weight: 400; 
+.bf-leader-card p {
+  font-size: var(--wp--preset--font-size--x-large);
+  margin-block: .5em;
 }
-
-.bf-grant-container .requirements {
-  font-size: var(--wp--preset--font-size--small);
-} */
+.bf-leader-card a {
+  font-size: var(--wp--preset--font-size--large);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--wp--preset--color--foreground);
+}
+.bf-leader-card a:hover {
+  color: var(--wp--preset--color--primary);
+  text-decoration: underline;
+}
+.bf-leader-card a::after {
+  content:'';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url('./assets/icn-feather-arrow-down-right.png');
+  margin-left: 20px;
+  margin-bottom: -3px;
+}
