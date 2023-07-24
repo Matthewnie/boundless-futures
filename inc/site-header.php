@@ -33,6 +33,11 @@ function be_site_header() {
 	echo do_blocks('<!-- wp:site-logo {"width":265,"shouldSyncIcon":true} /-->');
 	// echo '<a href="' . esc_url( home_url() ) . '" rel="home" class="site-header__logo" aria-label="' . esc_attr( get_bloginfo( 'name' ) ) . ' Home">' . get_bloginfo( 'name' ) . '</a>';
 
+	echo do_blocks('<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right","width":"100%"}} -->
+	<div class="wp-block-buttons"><!-- wp:button -->
+	<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">APPLY NOW</a></div>
+	<!-- /wp:button --></div>
+	<!-- /wp:buttons -->');
 
 	echo '<nav class="nav-menu" role="navigation">';
 	if ( has_nav_menu( 'primary' ) ) {

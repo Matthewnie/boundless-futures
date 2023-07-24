@@ -809,9 +809,13 @@ div.wpforms-container .wpforms-submit-container {
   right: 0;
   z-index: 1000;
 }
-.site-header .wrap {
+.site-header.menu-active .wp-block-buttons {
   display: flex;
+}
+.site-header .wrap {
   gap: var(--wp--custom--layout--block-gap-large);
+  display: grid;
+  grid-template-columns: 44px 200px 1fr;
   max-width: var(--wp--custom--layout--content);
 }
 .site-header__toggles {
@@ -824,6 +828,10 @@ div.wpforms-container .wpforms-submit-container {
 .site-header .wp-block-site-logo {
   max-width: 200px;
   z-index: 5;
+}
+.site-header .wp-block-buttons {
+  z-index: 5;
+  display: none;
 }
 @media (max-width: 768px) {
   .site-header {
@@ -897,9 +905,9 @@ div.wpforms-container .wpforms-submit-container {
 /* Navigation
 ---------------------------------------------------------------------------------------------------- */
 .nav-menu {
+  background-color: var(--wp--preset--color--background);
   padding-top: var(--wp--custom--layout--header);
   overflow: auto;
-  margin-top: var(--wp--custom--layout--block-gap-large);
   display: none;
 }
 .nav-menu > * {
@@ -931,14 +939,14 @@ div.wpforms-container .wpforms-submit-container {
 .nav-menu.active {
   display: block;
   position: fixed;
-  top: 0;
+  top: var(--wp--custom--layout--header);
   left: 0;
   right: 0;
   bottom: 0;
   background-color: var(--wp--preset--color--background);
 }
 .admin-bar .nav-menu.active {
-  top: 32px;
+  top: calc(32px + var(--wp--custom--layout--header));
 }
 
 #primary-menu {
