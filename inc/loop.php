@@ -44,6 +44,9 @@ add_action( 'tha_content_loop', 'be_default_loop' );
  * Entry Title
  */
 function be_entry_header() {
+	// disable page titles on pages
+	if(is_page()) return ;
+	
 	if ( be_has_h1_block() ) {
 		add_filter( 'render_block', 'be_entry_header_in_content', 10, 2 );
 

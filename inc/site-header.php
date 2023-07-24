@@ -27,12 +27,12 @@ add_action( 'after_setup_theme', 'be_register_menus' );
  * Site Header
  */
 function be_site_header() {
-	echo do_blocks('<!-- wp:site-logo {"width":265,"shouldSyncIcon":true} /-->');
-	// echo '<a href="' . esc_url( home_url() ) . '" rel="home" class="site-header__logo" aria-label="' . esc_attr( get_bloginfo( 'name' ) ) . ' Home">' . get_bloginfo( 'name' ) . '</a>';
-
 	echo '<div class="site-header__toggles">';
 	echo be_mobile_menu_toggle();
 	echo '</div>';
+	echo do_blocks('<!-- wp:site-logo {"width":265,"shouldSyncIcon":true} /-->');
+	// echo '<a href="' . esc_url( home_url() ) . '" rel="home" class="site-header__logo" aria-label="' . esc_attr( get_bloginfo( 'name' ) ) . ' Home">' . get_bloginfo( 'name' ) . '</a>';
+
 
 	echo '<nav class="nav-menu" role="navigation">';
 	if ( has_nav_menu( 'primary' ) ) {
@@ -90,4 +90,4 @@ function be_nav_add_dropdown_icons( $output, $item, $depth, $args ) {
 
 	return $output;
 }
-add_filter( 'walker_nav_menu_start_el', 'be_nav_add_dropdown_icons', 10, 4 );
+// add_filter( 'walker_nav_menu_start_el', 'be_nav_add_dropdown_icons', 10, 4 );

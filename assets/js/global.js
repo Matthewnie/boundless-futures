@@ -9,6 +9,7 @@
     // Element variables
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu[role="navigation"]');
+    const siteHeader = document.querySelector('.site-header[role="banner"]');
 
     const elementExists = function(element) {
     	if ( typeof(element) != 'undefined' && element != null ) {
@@ -22,6 +23,9 @@
     	if ( !event.target.closest('.menu-toggle') ) return;
     	if ( elementExists(navMenu) ) {
 			navMenu.classList.toggle('active');
+		}
+    	if ( elementExists(siteHeader) ) {
+			siteHeader.classList.toggle('menu-active');
 		}
     	menuToggle.classList.toggle('active');
     }

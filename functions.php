@@ -176,23 +176,8 @@ function be_template_hierarchy( $template ) {
 add_filter( 'template_include', 'be_template_hierarchy' );
 
 
-remove_action('tha_entry_top', 'be_entry_header');
+// remove_action('tha_entry_top', 'be_entry_header');
 function leader_top(){
 	if(!is_singular('leader')) return;
-
-	echo 'Testing';
 }
 add_action('tha_entry_top', 'leader_top', 5);
-
-// function archive_top_wrapper(){
-// 	if(!is_singular()){
-// 		echo '<div class="articles-container">';
-// 	}
-// }
-// add_action('tha_content_while_before', 'archive_top_wrapper');
-// function archive_bottom_wrapper(){
-// 	if(!is_singular()){
-// 		echo '</div>';
-// 	}
-// }
-// add_action('tha_content_while_after', 'archive_bottom_wrapper');

@@ -17,6 +17,10 @@ function be_after_post() {
 	Block_Areas\show( 'after-post' );
 }
 add_action( 'tha_content_while_after', 'be_after_post', 8 );
+// function be_before_post() {
+// 	echo 'Hello';
+// }
+// add_action( 'tha_content_while_before', 'be_before_post', 8 );
 
 
 // Build the page.

@@ -17,6 +17,15 @@ function be_entry_category() {
 	if( !empty( $term ) && ! is_wp_error( $term ) )
 		echo '<p class="entry-category"><a href="' . get_term_link( $term, 'category' ) . '">' . $term->name . '</a></p>';
 }
+/**
+ * Entry Category
+ *
+ */
+function be_entry_category_inline() {
+	$term = be_first_term();
+	if( !empty( $term ) && ! is_wp_error( $term ) )
+		echo '<span class="entry-category"><a href="' . get_term_link( $term, 'category' ) . '">' . $term->name . '</a></span>';
+}
 
 /**
  * Post Summary Title
@@ -32,8 +41,8 @@ function be_post_summary_title() {
  * Post Summary Image
  *
  */
-function be_post_summary_image( $size = 'thumbnail_medium' ) {
-	echo '<a class="post-summary__image" href="' . get_permalink() . '" tabindex="-1" aria-hidden="true">' . wp_get_attachment_image( be_entry_image_id(), $size ) . '</a>';
+function be_post_summary_image( $size = 'thumbnail_medium', $color = 'inherit' ) {
+	echo '<a class="post-summary__image" href="' . get_permalink() . '" tabindex="-1" style="color:'.$color.';" aria-hidden="true">' . wp_get_attachment_image( be_entry_image_id(), $size ) . '</a>';
 }
 
 
