@@ -1,0 +1,11 @@
+.gutena-accordion-block>.gutena-accordion-block__panel>.gutena-accordion-block__panel-title>.gutena-accordion-block__panel-title-inner>h6 {
+  order: 2;
+}
+.gutena-accordion-block>.gutena-accordion-block__panel>.gutena-accordion-block__panel-title>.gutena-accordion-block__panel-title-inner>.trigger-plus-minus {
+  order: 1;
+  border: 1px solid currentColor;
+  margin-inline: unset;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+}

@@ -34,3 +34,12 @@
   font-family: var(--wp--preset--font-family--futura);
   font-weight: normal;
 }
+
+@media (max-width: 768px){
+  .bf-cover {
+    height: 65vh;
+  }
+  .bf-cover h1 {
+    font-size: var(--wp--preset--font-size--jumbo);
+  }
+}

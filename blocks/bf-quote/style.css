@@ -58,30 +58,6 @@
   font-family: var(--wp--preset--font-family--futura);
 }
 
-/* Callout Style */
-.is-style-callout.bf-quote-container:before,
-.is-style-callout.bf-quote-container:after {
-  content: '';
-  display: block;
-  width: 35%;
-  background-color: var(--wp--preset--color--primary);
-  height: 5px;
-}
-
-.is-style-callout.bf-quote-container.alignwide:before,
-.is-style-callout.bf-quote-container.alignwide:after {
-  width: 45%;
-}
-
-.is-style-callout.bf-quote-container figure p {
-  padding-inline: clamp(3rem, 10vw, 6rem);
-}
-
-.is-style-callout.bf-quote-container figure p:before,
-.is-style-callout.bf-quote-container figure p:after {
-  display: none;
-}
-
 
 @media (max-width: 768px){
   .bf-quote-container {
@@ -141,5 +117,79 @@
     background-image: url("./assets/quotes-bottom.png");
     right: 20px;
     position: absolute;
+  }
+}
+
+/* Callout Style */
+.is-style-callout.bf-quote-container:before,
+.is-style-callout.bf-quote-container:after {
+  content: '';
+  display: block;
+  width: 35%;
+  background-color: var(--wp--preset--color--primary);
+  height: 5px;
+}
+
+.is-style-callout.bf-quote-container.alignwide:before,
+.is-style-callout.bf-quote-container.alignwide:after {
+  width: 45%;
+}
+
+.is-style-callout.bf-quote-container figure p {
+  padding-inline: clamp(3rem, 10vw, 6rem);
+}
+
+.is-style-callout.bf-quote-container figure p:before,
+.is-style-callout.bf-quote-container figure p:after {
+  display: none;
+}
+
+
+@media (max-width: 768px){
+  .is-style-callout.bf-quote-container {
+    flex-direction: column;
+    max-width: 90%;
+    margin-block: var(--wp--custom--layout--block-gap);
+    padding-block: var(--wp--custom--layout--block-gap);
+  }
+  .is-style-callout.bf-quote-container:before,
+  .is-style-callout.bf-quote-container.alignwide:before {
+    width: 30%;
+    height: 2px;
+    align-self: center;
+  }
+
+  .is-style-callout.bf-quote-container:after,
+  .is-style-callout.bf-quote-container.alignwide:after {
+    width: 30%;
+    height: 2px;
+    align-self: center;
+    margin-top: 15px;
+  }
+
+  .is-style-callout.is-style-callout.bf-quote-container blockquote {
+    margin-inline: 0;
+  }
+
+  .is-style-callout.bf-quote-container figure p {
+    text-align: left;
+    padding-inline: 0;
+    padding-inline: clamp(3rem, 10vw, 6rem);
+  }
+  
+  .is-style-callout.bf-quote-container figcaption {
+    text-align: left;
+    padding-inline: clamp(3rem, 10vw, 6rem);
+    font-size: var(--wp--preset--font-size--x-large);
+  }
+
+  .is-style-callout.bf-quote-container figure p:before {
+   display: none;
+  }
+  .is-style-callout.bf-quote-container figure p:after {
+    display: none;
+  }
+  .is-style-callout.bf-quote-container figure:after {
+    display: none;
   }
 }

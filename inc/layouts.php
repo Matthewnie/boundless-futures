@@ -146,7 +146,7 @@ function be_page_layout( $id = false ) {
 
 	// Default layouts.
 	$defaults = [
-		'post'              => 'content-sidebar',
+		'post'              => 'content',
 		'page'              => 'content',
 	];
 	foreach ( $defaults as $post_type => $default_layout ) {

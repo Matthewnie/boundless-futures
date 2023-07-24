@@ -422,6 +422,11 @@ input[type=search] {
   padding: var(--wp--custom--layout--block-gap-large) 0 0;
   background-color: #ffffff;
 }
+@media (max-width: 767px) {
+  .site-inner {
+    padding: 0 0;
+  }
+}
 
 body.full-width-content {
   --wp--custom--layout--page: var(--wp--custom--layout--wide);
@@ -1040,7 +1045,7 @@ div.wpforms-container .wpforms-submit-container {
     background-color: var(--wp--preset--color--background);
   }
   .admin-bar .nav-menu.active {
-    top: calc(32px + var(--wp--custom--layout--header));
+    top: var(--wp--custom--layout--header);
   }
   .nav-menu .menu-item {
     width: 100%;
@@ -1055,6 +1060,7 @@ div.wpforms-container .wpforms-submit-container {
   .nav-menu .submenu-expand svg {
     width: 18px;
     height: 18px;
+    fill: var(--wp--preset--color--primary);
   }
   .nav-menu .submenu-expand.expanded {
     transform: rotate(180deg);
@@ -1198,6 +1204,7 @@ div.wpforms-container .wpforms-submit-container {
   max-width: var(--wp--custom--layout--page);
   padding-top: var(--wp--custom--layout--block-gap-large);
   padding-bottom: var(--wp--custom--layout--block-gap-x-large);
+  padding-inline: var(--wp--custom--layout--block-gap);
 }
 .archive .site-main .archive-articles-container .archive-articles-content-title {
   display: flex;
@@ -1227,8 +1234,9 @@ div.wpforms-container .wpforms-submit-container {
 }
 .archive .site-main .archive-articles-container .archive-articles-posts {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: var(--wp--custom--layout--block-gap-large);
+  padding-bottom: var(--wp--custom--layout--block-gap);
 }
 @media (min-width: 768px) {
   .archive .site-main .archive-articles-container .archive-articles-posts {
@@ -1264,24 +1272,26 @@ div.wpforms-container .wpforms-submit-container {
   background-color: var(--wp--preset--color--foreground);
   color: var(--wp--preset--color--background);
 }
-.post-summary:nth-child(1) img, .post-summary:nth-child(2) img {
-  aspect-ratio: 16/9;
-}
-.post-summary:nth-child(1) .post-summary__title, .post-summary:nth-child(2) .post-summary__title {
-  font-size: var(--wp--preset--font-size--jumbo);
-}
-.post-summary:nth-child(1) .post-summary__byline, .post-summary:nth-child(2) .post-summary__byline {
-  height: 52px;
-  padding-left: 65px;
-  background-size: 49px 52px;
-}
-.post-summary:nth-child(1) {
-  grid-column: 1/3;
-  margin-right: var(--wp--custom--layout--block-gap-large);
-}
-.post-summary:nth-child(2) {
-  grid-column: 3/5;
-  margin-left: var(--wp--custom--layout--block-gap-large);
+@media (min-width: 768px) {
+  .post-summary:nth-child(1) img, .post-summary:nth-child(2) img {
+    aspect-ratio: 16/9;
+  }
+  .post-summary:nth-child(1) .post-summary__title, .post-summary:nth-child(2) .post-summary__title {
+    font-size: var(--wp--preset--font-size--jumbo);
+  }
+  .post-summary:nth-child(1) .post-summary__byline, .post-summary:nth-child(2) .post-summary__byline {
+    height: 52px;
+    padding-left: 65px;
+    background-size: 49px 52px;
+  }
+  .post-summary:nth-child(1) {
+    grid-column: 1/3;
+    margin-right: var(--wp--custom--layout--block-gap-large);
+  }
+  .post-summary:nth-child(2) {
+    grid-column: 3/5;
+    margin-left: var(--wp--custom--layout--block-gap-large);
+  }
 }
 .post-summary:nth-child(2n) .post-summary__image {
   border-color: var(--wp--preset--color--quinary);
@@ -1394,9 +1404,13 @@ div.wpforms-container .wpforms-submit-container {
   fill: var(--wp--preset--color--background);
 }
 
-.single .content-area {
-  border-top: 5px solid var(--wp--preset--color--primary);
-  padding-top: var(--wp--custom--layout--block-gap-large);
+@media (min-width: 768px) {
+  .single .content-area {
+    padding-top: var(--wp--custom--layout--block-gap-large);
+    max-width: var(--wp--custom--layout--wide);
+    margin-inline: auto;
+    border-top: 5px solid var(--wp--preset--color--primary);
+  }
 }
 
 /* Singular
@@ -1694,6 +1708,19 @@ h1.front {
 
 #footer-menu .sub-menu a:hover {
   text-decoration: underline;
+}
+
+.gutena-accordion-block > .gutena-accordion-block__panel > .gutena-accordion-block__panel-title > .gutena-accordion-block__panel-title-inner > h6 {
+  order: 2;
+}
+
+.gutena-accordion-block > .gutena-accordion-block__panel > .gutena-accordion-block__panel-title > .gutena-accordion-block__panel-title-inner > .trigger-plus-minus {
+  order: 1;
+  border: 1px solid currentColor;
+  margin-inline: unset;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
 }
 
 /*# sourceMappingURL=main.css.map */

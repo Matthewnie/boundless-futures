@@ -20,3 +20,15 @@
 .bf-grant-container .requirements {
   font-size: var(--wp--preset--font-size--small);
 }
+
+@media (max-width: 768px){
+  .bf-grant-container {
+    flex-direction: column;
+  }
+  .bf-grant-container .column {
+    width: 100%;
+  }
+  .bf-grant-container h5 {
+    display: none;
+  }
+}

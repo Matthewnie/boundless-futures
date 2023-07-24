@@ -30,6 +30,9 @@ body {
 .site-inner {
 	padding: var(--wp--custom--layout--block-gap-large) 0 0;
 	background-color:#ffffff;
+	@include media("<tablet") {
+		padding: 0 0;
+	}
 }
 
 body.full-width-content {

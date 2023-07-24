@@ -233,26 +233,6 @@
 			display: none;
 		}
 
-		// .sub-menu {
-		// 	background: var(--wp--preset--color--background);
-		// 	left: -9999px;
-		// 	opacity: 0;
-		// 	position: absolute;
-		// 	width: 215px;
-		// 	z-index: 99;
-
-		// 	.menu-item {
-		// 		float: none;
-
-		// 		&:hover > a {
-		// 		}
-		// 	}
-
-		// 	.sub-menu {
-		// 		margin: -48px 0 0 215px;
-		// 	}
-		// }
-
 		display: none;
 
 		&.active {
@@ -287,7 +267,7 @@
 			background-color: var(--wp--preset--color--background);
 
 			.admin-bar & {
-				top: calc(32px + var(--wp--custom--layout--header));
+				top: var(--wp--custom--layout--header);
 			}
 		}
 
@@ -303,6 +283,7 @@
 
 			svg {
 				@include size( 18px );
+				fill: var(--wp--preset--color--primary);
 			}
 
 			&:not(.expanded) {

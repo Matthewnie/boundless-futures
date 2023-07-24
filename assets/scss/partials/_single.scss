@@ -1,4 +1,9 @@
 .single .content-area {
-	border-top: 5px solid var(--wp--preset--color--primary);
-	padding-top: var(--wp--custom--layout--block-gap-large);
+  
+  @include media(">=tablet"){
+    padding-top: var(--wp--custom--layout--block-gap-large);
+    max-width: var(--wp--custom--layout--wide);
+    margin-inline: auto;
+    border-top: 5px solid var(--wp--preset--color--primary);
+  }
 }

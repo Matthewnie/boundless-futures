@@ -40,3 +40,12 @@
   position: relative;
   z-index: 0;
 }
+
+@media (max-width: 768px){
+  .bf-video-cover {
+    height: 65vh;
+  }
+  .bf-video-cover-background video {
+    height: 65vh;
+  }
+}
