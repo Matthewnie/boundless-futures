@@ -275,6 +275,12 @@ label,
 	}
 }
 
+.page .has-global-padding > .alignfull {
+	margin-right: calc(var(--wp--custom--layout--padding) * -1);
+	margin-left: calc(var(--wp--custom--layout--padding) * -1);
+	width: 100vw;
+}
+
 .alignwide:not(.is-layout-constrained) > * {
 	max-width: var(--wp--custom--layout--wide);
 	margin-left: auto;
@@ -298,4 +304,12 @@ label,
 .has-tertiary-background-color,
 .has-foreground-background-color {
 	color: var(--wp--preset--color--white);
+}
+
+
+// text alignments 
+.has-text-align-center {
+	@include media("<tablet"){
+		text-align: left;
+	}
 }

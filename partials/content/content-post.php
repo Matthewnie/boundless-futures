@@ -13,7 +13,7 @@ echo '<article class="' . esc_attr( join( ' ', get_post_class() ) ) . '">';
 if ( be_has_action( 'tha_entry_top' ) ) {
 	echo '<header class="entry-header">';
 		echo '<div class="image">';
-			echo '<img src="'.get_the_post_thumbnail_url().'"/>';
+			echo '<img src="'.get_the_post_thumbnail_url(null, 'blog-post').'"/>';
 		echo '</div>';
 	tha_entry_top();
 	echo '</header>';

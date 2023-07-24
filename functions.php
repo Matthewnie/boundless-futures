@@ -31,6 +31,9 @@ require_once get_template_directory() . '/inc/acf.php';
 require_once get_template_directory() . '/inc/wordpress-seo.php';
 include_once get_template_directory() . '/inc/wpforms.php';
 
+
+add_image_size( 'blog-post', 1200, 675, true );
+
 /**
  * Enqueue scripts and styles.
  */
