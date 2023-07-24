@@ -81,3 +81,65 @@
 .is-style-callout.bf-quote-container figure p:after {
   display: none;
 }
+
+
+@media (max-width: 768px){
+  .bf-quote-container {
+    flex-direction: column;
+    max-width: 90%;
+    margin-block: var(--wp--custom--layout--block-gap);
+    padding-top: var(--wp--custom--layout--block-gap);
+  }
+  .bf-quote-container:before,
+  .bf-quote-container.alignwide:before {
+    width: 80%;
+    height: 2px;
+    align-self: flex-end;
+  }
+
+  .bf-quote-container:after,
+  .bf-quote-container.alignwide:after {
+    width: 80%;
+    height: 2px;
+    align-self: flex-start;
+    margin-top: 15px;
+  }
+
+  .bf-quote-container blockquote {
+    margin-inline: 0;
+  }
+
+  .bf-quote-container figure p {
+    text-align: left;
+    padding-inline: 0;
+  }
+
+  .bf-quote-container figcaption {
+    text-align: left;
+    /* padding-inline: clamp(3rem, 10vw, 6rem); */
+    font-size: var(--wp--preset--font-size--x-large);
+  }
+
+  .bf-quote-container figure p:before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 30px;
+    background-image: url("./assets/quotes-top.png");
+    left: 0px;
+    top: -35px;
+    position: absolute;
+  }
+  .bf-quote-container figure p:after {
+    display: none;
+  }
+  .bf-quote-container figure:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 30px;
+    background-image: url("./assets/quotes-bottom.png");
+    right: 20px;
+    position: absolute;
+  }
+}

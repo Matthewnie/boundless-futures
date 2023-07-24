@@ -33,3 +33,9 @@
   margin-left: 20px;
   margin-bottom: -3px;
 }
+
+@media (max-width: 768px){
+  .bf-leader-card {
+    max-width: 250px; 
+  }
+}

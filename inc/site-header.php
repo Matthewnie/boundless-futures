@@ -95,4 +95,4 @@ function be_nav_add_dropdown_icons( $output, $item, $depth, $args ) {
 
 	return $output;
 }
-// add_filter( 'walker_nav_menu_start_el', 'be_nav_add_dropdown_icons', 10, 4 );
+add_filter( 'walker_nav_menu_start_el', 'be_nav_add_dropdown_icons', 10, 4 );

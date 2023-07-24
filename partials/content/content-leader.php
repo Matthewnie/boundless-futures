@@ -13,6 +13,9 @@ echo '<article class="' . esc_attr( join( ' ', get_post_class() ) ) . '">';
 if ( be_has_action( 'tha_entry_top' ) ) {
 	echo '<header class="entry-header leader" >';
 		echo '<div class="entry-header-content" style="background-image: url('.get_the_post_thumbnail_url().');">';
+		echo '<div class="image">';
+			echo '<img src="'.get_the_post_thumbnail_url().'"/>';
+		echo '</div>';
 			echo '<div class="title">';
 				echo '<h1 class="entry-title">' . esc_html( get_the_title() ) . '</h1>';
 				echo '<p>'.get_field('role').'</p>';

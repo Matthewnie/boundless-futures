@@ -32,6 +32,11 @@
 	padding: 0 var(--wp--custom--layout--block-gap-x-large);
 	gap: var(--wp--custom--layout--block-gap-x-large);
 	margin: 0 auto;
+
+	@include media('<tablet'){
+		flex-direction: column;
+		gap: var(--wp--custom--layout--block-gap-large);
+	}
 }
 
 .footer-info-block hr {
@@ -55,6 +60,13 @@
 	column-gap: var(--wp--custom--layout--block-gap-large);
 	row-gap: var(--wp--custom--layout--block-gap);
 	justify-content: space-between;
+
+	@include media('<tablet'){
+		display: flex;
+		flex-direction: column;
+
+		text-align: center;
+	}
 }
 
 #footer-menu > li {
