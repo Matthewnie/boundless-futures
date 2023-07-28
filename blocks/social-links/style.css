@@ -23,13 +23,13 @@ ul.social-links a {
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
-
-	border: 2px solid var(--wp--preset--color--foreground);
+	color: currentColor;
+	border: 2px solid currentColor;
 	border-radius: 50%;
 }
 
 ul.social-links svg {
-	fill: var(--wp--preset--color--foreground);
+	fill: currentColor;
 	width: 20px;
 	height: 20px;
 }
@@ -44,3 +44,5 @@ ul.social-links a:hover svg {
 .editor-styles-wrapper ul.social-links a {
 	pointer-events: none;
 }
+
+.has-primary-color

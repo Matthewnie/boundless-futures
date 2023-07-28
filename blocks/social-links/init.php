@@ -58,9 +58,13 @@ function site( $block = [] ) {
 		}
 	}
 
+
 	$classes = ['social-links'];
 	if ( ! empty( $block['alignText'] ) ) {
 		$classes[] = 'has-text-align-' . $block['alignText'];
+	}
+	if ( ! empty( $block['textColor'] ) ) {
+		$classes[] = 'has-' . $block['textColor'] . '-color';
 	}
 
 	if ( ! empty( $output ) ) {

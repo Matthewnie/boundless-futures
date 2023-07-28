@@ -1,3 +1,9 @@
+.type-leader .entry-content {
+  // width: 100%;
+  margin-inline: auto;
+  max-width: var(--wp--custom--layout--page);
+}
+
 .entry-header.leader {
   max-width: var(--wp--custom--layout--wide);
   .entry-header-content {

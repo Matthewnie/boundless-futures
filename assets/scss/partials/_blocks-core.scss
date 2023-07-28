@@ -74,13 +74,13 @@ figure.wp-caption {
 
 			&.alignleft {
 				max-width: calc( var(--wp--custom--layout--content) / 2 );
-				margin-left: calc( calc( 100vw - var(--wp--custom--layout--content ) ) / 2 );
+				// margin-left: calc( calc( 100vw - var(--wp--custom--layout--content ) ) / 2 );
 
 			}
 
 			&.alignright {
 				max-width: calc( var(--wp--custom--layout--content) / 2 );
-				margin-right: calc( calc( 100vw - var(--wp--custom--layout--content ) ) / 2 );
+				// margin-right: calc( calc( 100vw - var(--wp--custom--layout--content ) ) / 2 );
 			}
 		}
 	}
